@@ -9,16 +9,18 @@
       height: 100dvh;
       display: flex;
       flex-direction: column;
-      /* container-type: inline-size; */
+      container-type: inline-size;
     }
     .main {
       flex-grow: 1;
-
+      display: flex;
+      flex-direction: column;
       @container (width >= 1024px) {
         background-color: red;
       }
     }
     .scroll {
+      flex-grow: 1;
       overflow-y: auto;
     }
   </style>
